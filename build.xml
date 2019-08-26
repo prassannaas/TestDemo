@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <project name="demo" default="package">
 	<path id="libpath">
-		<fileset dir="WebRoot/WEB-INF/lib">
+		<fileset dir="WebContent/WEB-INF/lib">
 			<include name="**/*.jar"/>
 		</fileset>
 	</path> 
@@ -11,7 +11,7 @@
 		<!-- <property name="resource" value="com/megacrm"/> -->
 		<property name="classes" value="temp/classes"/>
 		<property name="wars" value="temp/wars"/>
-		<property name="web.xml" value="WebRoot/WEB-INF/web.xml"/>
+		<property name="web.xml" value="WebContent/WEB-INF/web.xml"/>
 	</target>		
 	
 	<target name="clean" depends="init">
@@ -34,7 +34,7 @@
 		<!-- <copy file="${src_dir}/${resource}/config.properties" todir="${classes}/${resource}"/>
 		<copy file="${src_dir}/${resource}/log4j.properties" todir="${classes}/${resource}"/> -->
 		<war destfile="${wars}/demo.war" webxml="${web.xml}">
-			<fileset dir="WebRoot"/>
+			<fileset dir="WebContent"/>
 			<classes dir="${classes}"/>
 		</war>
 		<copy file="${wars}/demo.war" todir="/opt/artifacts"/>
