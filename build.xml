@@ -37,6 +37,6 @@
 			<fileset dir="WebContent"/>
 			<classes dir="${classes}"/>
 		</war>
-		<copy file="${wars}/demo.war" todir="/opt/artifacts"/>
+		<copy file="${wars}/demo.war" todir="C:\Program Files (x86)\Jenkins\workspace\TEST_DEMO"/>
 	</target>
 </project>
