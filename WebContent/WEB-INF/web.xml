@@ -11,7 +11,7 @@
 	</servlet>
 	 <context-param>
 		<param-name>Megacrm-Version</param-name>
-		<param-value>3.0.040</param-value>
+		<param-value>3.0.041</param-value>
 	</context-param>  
   
   <servlet>
